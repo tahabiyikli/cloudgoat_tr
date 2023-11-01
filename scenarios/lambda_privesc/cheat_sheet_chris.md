@@ -36,6 +36,8 @@ def lambda_handler(event, context):
 	return response
 ````
 
+`zip -r lambda_function.py.zip lambda_function.py`
+
 `aws lambda create-function --function-name admin_function --runtime python3.9 --role <cg-debug-role arn> --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.py.zip --profile lambdaManager` --region us-east-1`
 
 `aws lambda invoke --function-name admin_function out.txt --profile lambdaManager --region us-east-1`
