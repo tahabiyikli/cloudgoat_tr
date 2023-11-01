@@ -20,6 +20,8 @@
 
 `aws ec2 run-instances --image-id ami-0a313d6098716f372 --instance-type t2.micro --iam-instance-profile Arn=<instanceProfileArn> --key-name pwned --profile kerrigan --subnet-id <subnetId> --security-group-ids <securityGroupId> --region us-east-1`
 
+`aws ec2 describe-instances --profile Kerrigan --region us-east-1`
+
 `ssh -i pwned.pem ubuntu@<instancePublicIP>`
 
 `sudo apt-get update`
