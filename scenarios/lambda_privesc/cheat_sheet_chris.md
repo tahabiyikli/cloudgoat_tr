@@ -18,7 +18,8 @@
 
 
 Then add the lambdaManager credentials to your AWS CLI credentials file at `~/.aws/credentials`) as shown below:
-
+`aws configure --profile lambdaManager`
+`aws configure set aws_session_token "token_key" --profile lambdaManager`
 ```
 [lambdaManager]
 aws_access_key_id = {{AccessKeyId}}
